@@ -12,4 +12,47 @@ class Solution(object):
                 return True
         return False
         
+    def searchMatrix2(self, matrix, target):
+    """
+    :type matrix: List[List[int]]
+    :type target: int
+    :rtype: bool
+    """
+    if len(matrix) == 0 or len(matrix[0]) == 0:
+        return False
+    H = len(matrix)
+    W = len(matrix[0])
+
+    start_row = H - 1
+    start_col = 0
+
+    while start_col < W and start_row >= 0:
+        if matrix[start_row][start_col] < target:
+            start_col += 1
+        elif matrix[start_row][start_col] > target:
+            start_row -=1
+        else:
+            return True
+
+
+    return False
+        
+
+sol = Solution()
+# print(sol.searchMatrix1([
+#   [1,   4,  7, 11, 15],
+#   [2,   5,  8, 12, 19],
+#   [3,   6,  9, 16, 22],
+#   [10, 13, 14, 17, 24],
+#   [18, 21, 23, 26, 30]
+# ], 40))
+
+print(sol.searchMatrix2([
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+], 4))
+
         
