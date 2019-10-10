@@ -37,15 +37,33 @@ class Solution(object):
 
     return False
         
+    def searchMatrix3(self, matrix, target):
+    """
+    :type matrix: List[List[int]]
+    :type target: int
+    :rtype: bool
+    """   
+    # 如果没有排序特性的话呢？
+    # 把二位矩阵压成一维数组可以吗？
+        l = []
+        for a in range(len(matrix)):
+            for num in matrix[a]:
+                l.append(num)
+        if target in l:
+            return True
+        else:
+            return False
+
+                
 
 sol = Solution()
-# print(sol.searchMatrix1([
-#   [1,   4,  7, 11, 15],
-#   [2,   5,  8, 12, 19],
-#   [3,   6,  9, 16, 22],
-#   [10, 13, 14, 17, 24],
-#   [18, 21, 23, 26, 30]
-# ], 40))
+print(sol.searchMatrix1([
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+], 40))
 
 print(sol.searchMatrix2([
   [1,   4,  7, 11, 15],
@@ -55,4 +73,11 @@ print(sol.searchMatrix2([
   [18, 21, 23, 26, 30]
 ], 4))
 
+print(sol.searchMatrix3([
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+], 4))
         
