@@ -10,7 +10,8 @@ class Quick_Sort(object):
         self.quickSort(arr, pviot+1,end)
 
     # get the position of pviot
-    def partition(self, arr, start, end):
+    # 双边循环法
+    def partition1(self, arr, start, end):
         pivot = arr[start]
         left = start
         right = end
