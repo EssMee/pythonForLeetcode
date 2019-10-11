@@ -33,5 +33,9 @@ class Solution(object):
             if slow == fast:
                 return True
         return False
-        
+    """
+    （1）求环长：第二次相遇的时候，慢指针走过的距离就是环长。
+    （2）求入环点： 把慢指针停在第一次相遇的地方，快指针回到头节点，两个指针每次向前走动一步，相遇的地方就是入
+    """
                 
+        
