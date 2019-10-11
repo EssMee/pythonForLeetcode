@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution(object):
-    def hasCycle(self, head):
+    def hasCycle1(self, head):
         """
         :type head: ListNode
         :rtype: bool
@@ -19,5 +19,19 @@ class Solution(object):
             slow = slow.next
             fast = fast.next
         return True
+    
+        slow = head
+        fast = head
+    def hasCycle2(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False
         
                 
