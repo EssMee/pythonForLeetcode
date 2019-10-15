@@ -11,7 +11,7 @@ class Solution(object):
         #     count = sum(1 for ele in nums if ele == num)
         #     if count > st: 
         #         return num
-        # nums.sort()
+        nums.sort()
         max_length = len(nums)
         return nums[len(nums)//2]
 sol = Solution()
