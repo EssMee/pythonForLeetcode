@@ -23,4 +23,8 @@ class Solution(object):
         # return a
 
 sol = Solution()
+<<<<<<< HEAD
 print(sol.singleNumber([1,2,2,1,4]))
+=======
+print(sol.singleNumber([1,2,2,1,4]))
+>>>>>>> 9845326d6aa92f2b824d9c714d0e054fa7861017

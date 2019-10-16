@@ -57,4 +57,8 @@ test.push(1)
 test.push(2)
 print(test.peek())
 print(test.pop())
+<<<<<<< HEAD
 print(test.empty())
+=======
+print(test.empty())
+>>>>>>> 9845326d6aa92f2b824d9c714d0e054fa7861017

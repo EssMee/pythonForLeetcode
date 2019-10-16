@@ -1,0 +1,31 @@
+1. 上传本地代码
+接下来依次输入以下代码即可完成其他剩余操作：
+
+git add .        （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）
+
+git commit  -m  ”提交信息”  （注：“提交信息”里面换成你需要，如“first commit”）
+
+git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+
+
+2.Github提交更改的代码
+
+更改了本地的某一文件的代码，那么如何覆盖Github上的同一文件代码呢？请看以下步骤：
+
+ 
+
+1、先用 git status 看你更改了哪些文件；
+
+2、然后 git add 你想要提交的更改的文件 或者 git add . 所有的文件；
+
+3、再git commit -m ‘提交信息’；
+
+4、最后 git push origin master/你的分支 。
+
+
+
+clone 是本地没有 repository 时，将远程 repository 整个下载过来。
+
+pull 是本地有 repository 时，将远程 repository 里新的 commit 数据(如有的话)下载过来，并且与本地代码merge。
+
+ 
