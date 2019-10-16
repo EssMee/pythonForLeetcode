@@ -18,6 +18,7 @@ class Solution(object):
                 for i in range(len(right)):
                     res.append([left]+right[i])
         return res
+<<<<<<< HEAD
 
     
 #     def ishuiwen(self,s):
@@ -35,3 +36,5 @@ class Solution(object):
 sol = Solution()
 print(sol.partition("aab"))
 # print(sol.ishuiwen("abbac"))
+=======
+>>>>>>> b1586ea9535a3a7a0a5a8538497bcb34b8e03c4c
